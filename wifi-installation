@@ -1,0 +1,30 @@
+== fdisk ==
+	-> wipe out disk
+	-> partition
+	-> create file systems
+
+== keymaps, locale, time etc ==
+
+== mount sda3, arch-chroot, install ==
+
+== more locale, sysclock ==
+
+== user, passwd, wheel group, privilage ==
+
+== mount sda1, grub config ==
+
+== wifi ==
+-> install iwd(iwctl), netctl, networkmanager, dhcpcd, wpa_supplicant
+-> systemctl enable netctl ONLY!
+
+== unmount, reboot ==
+
+== xfce ==
+xorg xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
+systemctl enable lightdm
+
+== audio ==
+-> pulseaudio, pavucontrol
+
+== volumn manager ==
+-> thunar, gvfs, udisks2
