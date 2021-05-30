@@ -1,4 +1,4 @@
-# arch
+# arch-wifi-installation
 
 Installation guide of arch linux
 
