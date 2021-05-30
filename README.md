@@ -1,3 +1,7 @@
 # arch
 
-1. How to install arch linux with Wifi.
+Installation guide of arch linux
+
+- basic configuration
+- keymap settings
+- Wifi settings
