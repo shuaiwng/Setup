@@ -1,0 +1,20 @@
+vim installation
+============================================
+
+NERDTree
+---
+copy NERDTree plugin into ~/.vim
+:NERDTreeToggle
+
+
+add a .vimrc file in ~ directory and configue as follows:
+---
+set number
+syntax on
+color pablo 
+set tabstop=4
+set autoindent
+set expandtab
+set softtabstop=4
+autocmd vimenter * NERDTree
+
