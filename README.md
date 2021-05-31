@@ -1,7 +1,7 @@
-# arch-wifi 
+# installation and configuration in general 
 
-installation guide of arch linux
-
-- basic configuration
-- keymap settings
-- Wifi settings
+arch-wifi
+---
+1. basic configuration
+2. keymap settings
+3. wifi settings for instance on MacbookPro
