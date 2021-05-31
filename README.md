@@ -1,6 +1,6 @@
-# arch-wifi-installation
+# arch-wifi 
 
-Installation guide of arch linux
+installation guide of arch linux
 
 - basic configuration
 - keymap settings
