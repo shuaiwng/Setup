@@ -8,13 +8,13 @@ copy NERDTree plugin into ~/.vim
 
 Terminal
 ---
-Base16-Framer
+Base16-Brewer
 
 add a .vimrc file in ~ directory and configue as follows:
 ---
 set number
 syntax on
-color darkblue 
+color slate 
 set tabstop=4
 set autoindent
 set noexpandtab
