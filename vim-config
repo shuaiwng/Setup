@@ -6,15 +6,18 @@ NERDTree
 copy NERDTree plugin into ~/.vim
 :NERDTreeToggle
 
+Terminal
+---
+Base16-Framer
 
 add a .vimrc file in ~ directory and configue as follows:
 ---
 set number
 syntax on
-color pablo 
+color darkblue 
 set tabstop=4
 set autoindent
-set expandtab
+set noexpandtab
 set softtabstop=4
 autocmd vimenter * NERDTree
 
