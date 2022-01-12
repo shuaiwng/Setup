@@ -32,3 +32,17 @@ systemctl enable lightdm
 
 == volumn manager ==
 -> thunar, gvfs, udisks2
+
+==== KDE Plasma ====
+echo LANG=de_DE.UTF-8 > /etc/locale.conf
+touch /etc/locale.gen ##### Comment de_DE.UTF.... out
+sudo locale-gen
+touch /etc/X11/xorg.conf.d/20-keyboard.conf
+then input the following:
+Section "InputClass"
+Identifier "keyboard"
+MatchIsKeyboard "yes"
+Option "XkbLayout" "de"
+Option "XkbVariant" "nodeadkeys"
+EndSection
+
