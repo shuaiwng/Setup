@@ -28,5 +28,5 @@ systemctl enable lightdm
 
 ==== KDE Plasma ====
 echo LANG=de_DE.UTF-8 > /etc/locale.conf
-touch /etc/locale.gen ##### Comment de_DE.UTF.... out
+/etc/locale.gen ##### Comment out "de_DE.UTF"
 sudo locale-gen
