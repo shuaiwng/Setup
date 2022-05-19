@@ -1,0 +1,3 @@
+# Dependency for CMake
+- pacman -Sy arm-none-eabi-gcc
+- pacman -Sy arm-none-eabi-newlib
