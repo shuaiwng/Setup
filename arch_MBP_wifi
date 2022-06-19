@@ -19,14 +19,22 @@
 
 == unmount, reboot ==
 
+== signature issue ==
+pacman -S archlinux-keyring
+
 == xfce ==
 xorg xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
 systemctl enable lightdm
 
+== xfce locale == 
+configure "Keyboard" regarding keyboard type and language
+echo LANG=de_DE.UTF-8 > /etc/locale.conf
+reboot
+
 == audio ==
 -> pulseaudio, pavucontrol
+reboot
 
-==== KDE Plasma ====
-echo LANG=de_DE.UTF-8 > /etc/locale.conf
-/etc/locale.gen ##### Comment out "de_DE.UTF"
-sudo locale-gen
+== volumn ==
+-> udisks2, gvfs
+reboot

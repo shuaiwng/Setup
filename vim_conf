@@ -1,0 +1,29 @@
+vim setup
+============================================
+
+NERDTree
+---
+copy the zip content of NERDTree into ~/.vim/
+
+.vimrc file
+---
+set number
+syntax on
+set tabstop=4
+set autoindent
+set noexpandtab
+set softtabstop=4
+set mouse=a
+autocmd vimenter * NERDTree
+let NERDTreeMapOpenInTab='<ENTER>'
+
+
+# Instructions
+1. use mouse to jump to the editing area immediately 
+2. use mouse to browse around in NERDTree 
+3. use mouse to display the selected file
+4. select NERDTree-dir, press "cd" as current workspace
+5. use "ENTER" to open file in a new tab
+6. use mouse or "gt" to switch among tabs
+7. use "Ctrl+w" to switch among windows
+8. use "i" for vertical split
