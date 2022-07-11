@@ -18,7 +18,7 @@ autocmd vimenter * NERDTree
 let NERDTreeMapOpenInTab='<ENTER>'
 
 
-# Instructions
+HOWTO 
 1. use mouse to jump to the editing area immediately 
 2. use mouse to browse around in NERDTree 
 3. use mouse to display the selected file

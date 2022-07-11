@@ -7,6 +7,6 @@
 - cd build
 - export PICO_SDK_PATH=../../pico-sdk
 - cmake .. # environment is set up, build files including Makefiles are prepared
-- cd blink # or any other project
+- cd blink 
 - make # buld process, creating elf, uf2..
 - upload uf2 to boostel as usual

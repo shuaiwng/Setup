@@ -1,5 +1,5 @@
 == fdisk ==
-	-> wipe out disk
+	-> format disk
 	-> partition
 	-> create file systems
 
