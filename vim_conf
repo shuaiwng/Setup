@@ -27,3 +27,8 @@ HOWTO
 6. use mouse or "gt" to switch among tabs
 7. use "Ctrl+w" to switch among windows
 8. use "i" for vertical split
+9. Comment/uncomment
+    -> ctrl+V choosing multiple lines
+    -> shift+I, then type to comment
+    -> ESC
+    -> ctrl+V, press x to uncomment
