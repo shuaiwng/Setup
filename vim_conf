@@ -10,8 +10,9 @@ copy the zip content of NERDTree into ~/.vim/
 set number
 syntax on
 set tabstop=4
+set shiftwidth=4
 set autoindent
-set noexpandtab
+set expandtab
 set softtabstop=4
 set mouse=a
 autocmd vimenter * NERDTree
