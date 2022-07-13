@@ -3,10 +3,19 @@
 - pacman -Sy arm-none-eabi-newlib
 
 # Cmake
-- Create a "build" folder unter the "Sample" folder
+- create an empty project folder
+- write source files
+- copy pico_sdk_import.cmake into the folder
+- write CMakeLists.txt in the folder
+- create a "build" folder within the project folder
 - cd build
-- export PICO_SDK_PATH=../../pico-sdk
+- export PICO_SDK_PATH=PATH/TO/pico-sdk
 - cmake .. # environment is set up, build files including Makefiles are prepared
-- cd blink 
 - make # buld process, creating elf, uf2..
-- upload uf2 to boostel as usual
+- upload uf2 to boostel 
+
+# Debug using tinyusb and minicom
+- clone tinyusb into pico-sdk../tinyusb lib-folder, if empty
+- pico_enable_stdio_usb($PROJ 1) -> USB enabled in CMakeLists.txt
+- sudo minicom -b 115200 -o -D /dev/ttyACM0 to examine the stdout
+- Ctl+A, then q to quit
