@@ -36,5 +36,5 @@ reboot
 reboot
 
 == volumn ==
--> udisks2, gvfs
+-> udisks2, gvfs-mtp
 reboot
