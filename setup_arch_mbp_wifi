@@ -31,6 +31,9 @@ configure "Keyboard" regarding keyboard type and language
 echo LANG=de_DE.UTF-8 > /etc/locale.conf
 reboot
 
+== language fonts ==
+pacman -S adobe-source-han-sans-otc-fonts
+
 == audio ==
 -> pulseaudio, pavucontrol
 reboot
