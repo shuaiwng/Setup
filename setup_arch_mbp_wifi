@@ -1,23 +1,6 @@
-== fdisk ==
-	-> format disk
-	-> partition
-	-> create file systems
-
-== keymaps, locale, time etc ==
-
-== mount sda3, arch-chroot, install ==
-
-== more locale, sysclock ==
-
-== user, passwd, wheel group, privilage ==
-
-== mount sda1, grub config ==
-
 == wifi ==
 -> install iwd(iwctl), netctl, networkmanager, dhcpcd, wpa_supplicant
 -> systemctl enable netctl ONLY!
-
-== unmount, reboot ==
 
 == signature issue ==
 pacman -S archlinux-keyring
@@ -28,7 +11,7 @@ systemctl enable lightdm
 
 == xfce locale == 
 configure "Keyboard" regarding keyboard type and language
-echo LANG=de_DE.UTF-8 > /etc/locale.conf
+optioneal: echo LANG=de_DE.UTF-8 > /etc/locale.conf
 reboot
 
 == language fonts ==
@@ -36,8 +19,6 @@ pacman -S adobe-source-han-sans-otc-fonts
 
 == audio ==
 -> pulseaudio, pavucontrol
-reboot
 
 == volumn ==
 -> udisks2, gvfs-mtp
-reboot
