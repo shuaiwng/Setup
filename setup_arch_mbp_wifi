@@ -11,7 +11,7 @@ systemctl enable lightdm
 
 == xfce locale == 
 configure "Keyboard" regarding keyboard type and language
-optioneal: echo LANG=de_DE.UTF-8 > /etc/locale.conf
+optional: echo LANG=de_DE.UTF-8 > /etc/locale.conf
 reboot
 
 == language fonts ==
