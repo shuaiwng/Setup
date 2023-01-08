@@ -1,6 +1,7 @@
-1. search for java11-openjdk at AUR
-2. sudo pacman -U --noconfirm my-java11-package.pkg.tar.zst
-3. now under /usr/lib/jvm/ there should be java-11 available
-4. edit "/etc/profile", adding JAVA_HOME at the bottom:
-	export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
-5. reboot and type "freemind" 
+- search for java11-openjdk at AUR
+- sudo pacman -U --noconfirm my-java11-package.pkg.tar.zst
+- now under /usr/lib/jvm/ there should be java-11 available
+- write a bash file, containing:
+	env JAVA_HOME=/usr/lib/jvm/java-11-openjdk freemind 
+- use the executable launcher
+
