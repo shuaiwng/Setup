@@ -3,6 +3,10 @@
 -> systemctl enable netctl ONLY!
 
 == signature issue ==
+arch-chroot /mnt
+rm -fr /etc/pacman.d/gnupg
+pacman-key --init
+pacman-key --populate
 pacman -S archlinux-keyring
 
 == xfce ==
