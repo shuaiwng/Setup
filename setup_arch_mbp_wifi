@@ -20,6 +20,7 @@ systemctl enable ssdm
 == SSH ==
 # Login on remote-machine
     install openssh
+    systemctl start sshd
     ssh user@ip-address with password
 
 # Transfer folder with files via SSH
