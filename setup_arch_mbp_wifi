@@ -1,6 +1,6 @@
 == wifi ==
 -> install iwd(iwctl), netctl, networkmanager, dhcpcd, wpa_supplicant
--> systemctl enable netctl ONLY!
+-> systemctl enable netctl ONLY 
 
 == signature issue ==
 arch-chroot /mnt
@@ -9,20 +9,19 @@ pacman-key --init
 pacman-key --populate
 pacman -S archlinux-keyring
 
-== xfce ==
-xorg xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
-systemctl enable lightdm
+== KDE ==
+xorg plasma-meta kde-applications
+systemctl enable ssdm
+# Settings:
+    disable Desktop Effects
+    disable "File Search"
+    uninstall akonadi
 
-== xfce locale == 
-configure "Keyboard" regarding keyboard type and language
-optional: echo LANG=de_DE.UTF-8 > /etc/locale.conf
-reboot
+== SSH ==
+# Login on remote-machine
+    install openssh
+    ssh user@ip-address with password
 
-== language fonts ==
-pacman -S adobe-source-han-sans-otc-fonts
-
-== audio ==
--> pulseaudio, pavucontrol
-
-== volumn ==
--> udisks2, gvfs-mtp
+# Transfer folder with files via SSH
+    find inet or inet6 address on the target-machine via "ip a"
+    scp -r PATH_TO_LOCAL_FOLDER username@ip_address:PATH_TARGET 
