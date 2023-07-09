@@ -1,5 +1,5 @@
 == wifi ==
--> install iwd(iwctl), netctl, networkmanager, dhcpcd, wpa_supplicant
+-> install iwd(iwctl), netctl, dhcpcd, wpa_supplicant
 -> systemctl enable netctl ONLY 
 
 == signature issue ==
@@ -22,7 +22,6 @@ systemctl enable ssdm
     install openssh
     systemctl start sshd
     ssh user@ip-address with password
-
 # Transfer folder with files via SSH
     find inet or inet6 address on the target-machine via "ip a"
     scp -r PATH_TO_LOCAL_FOLDER username@ip_address:PATH_TARGET 
