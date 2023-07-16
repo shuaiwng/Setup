@@ -1,6 +1,6 @@
 == wifi ==
 -> install iwd(iwctl), netctl, dhcpcd, wpa_supplicant
--> systemctl enable netctl ONLY 
+-> systemctl enable netctl
 
 == signature issue ==
 arch-chroot /mnt
@@ -8,14 +8,6 @@ rm -fr /etc/pacman.d/gnupg
 pacman-key --init
 pacman-key --populate
 pacman -S archlinux-keyring
-
-== KDE ==
-xorg plasma-meta kde-applications
-systemctl enable ssdm
-# Settings:
-    disable Desktop Effects
-    disable "File Search"
-    uninstall akonadi
 
 == SSH ==
 # Login on remote-machine
