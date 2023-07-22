@@ -1,19 +1,27 @@
-== wifi ==
+# wifi
 -> install iwd(iwctl), netctl, dhcpcd, wpa_supplicant
 -> systemctl enable netctl
 
-== signature issue ==
+# signature issue
 arch-chroot /mnt
 rm -fr /etc/pacman.d/gnupg
 pacman-key --init
 pacman-key --populate
 pacman -S archlinux-keyring
 
-== SSH ==
-# Login on remote-machine
+# xfce
+xorg xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
+systemctl enable lightdm
+
+# audio/volumn
+pulseaudio, pavucontrol
+udisks2, gvfs
+
+# SSH
+1. Login on remote-machine
     install openssh
     systemctl start sshd
     ssh user@ip-address with password
-# Transfer folder with files via SSH
+2. Transfer folder with files via SSH
     find inet or inet6 address on the target-machine via "ip a"
     scp -r PATH_TO_LOCAL_FOLDER username@ip_address:PATH_TARGET 
