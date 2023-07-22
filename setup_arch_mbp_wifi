@@ -15,7 +15,7 @@ systemctl enable lightdm
 
 # audio/volumn
 pulseaudio, pavucontrol
-udisks2, gvfs
+udisks2, gvfs, gvfs-mtp
 
 # SSH
 1. Login on remote-machine
