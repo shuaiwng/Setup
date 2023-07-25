@@ -1,6 +1,9 @@
 # wifi
 -> install iwd(iwctl), netctl, dhcpcd, wpa_supplicant
 -> systemctl enable netctl
+-> systemctl enable systemd-resolved.service
+-> systemctl start systemd-resolved.service
+-> systemctl status systemd-resolved.service
 
 # signature issue
 arch-chroot /mnt
